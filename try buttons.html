@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="<KEY>" crossorigin="anonymous">
+<title>Hello, world!</title>
+<style>
+      .btn-custom {
+        background-color: #0e204d;
+        color: white;
+        border: none;
+        margin: 5px;
+      }
+    </style>
+</head>
+<body>
+<div class="row">
+<div class="col-12">
+<div class="card" id="content-card" style="width: 18rem;">
+<div class="card-body">
+<h5 class="card-title" id="card-title"></h5>
+<p class="card-text" id="card-text"></p>
+</div>
+</div>
+</div>
+<div class="col-12">
+<button class="btn btn-custom" onclick="showContent1()">Mission</button>
+<button class="btn btn-custom" onclick="showContent2()">Vision</button>
+<button class="btn btn-custom" onclick="showContent3()">Values</button>
+</div>
+</div>
+<script>
+function showContent1() {
+        document.getElementById("card-title").innerText = "Mission";
+        document.getElementById("card-text").innerText = "To be the leading regional development partner in providing aquaculture knowledge and solutions in the building of environmentally sustainable aquaculture.";
+      }
+
+      function showContent2() {
+        document.getElementById("card-title").innerText = "Vision";
+        document.getElementById("card-text").innerText = "To be the leading regional development partner in providing aquaculture knowledge and solutions in the building of environmentally sustainable aquaculture";
+      }
+
+      function showContent3() {
+        document.getElementById("card-title").innerText = "Values";
+        document.getElementById("card-text").innerText = "⦁	Provide alternative and direct employment opportunities in aquaculture secto";
+      }
+    </script>
+</body>
+</html>
